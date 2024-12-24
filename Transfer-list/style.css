@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+}
+main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+.box1 , .box2{
+     width:40vw;
+     border: 1px solid #000; 
+      height: 40vh;
+       display: flex;
+       flex-direction: column;
+       justify-content: space-around;
+       align-items: start;
+       padding: 20px;
+
+}
+
+
+.btn{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}

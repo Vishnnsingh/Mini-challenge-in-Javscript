@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Check</title>
+    <style>
+        .main{
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+        }
+        .list{
+            display: flex;
+            justify-content: space-between;
+            color: #00000034;
+        }
+        .strenghtDiv{
+            width: 300px;
+            border: 1px solid #000;
+            height: 5px;
+            border-radius: 20px;
+        }
+        .color{
+            height:100%;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Password Strength</h1>
+    <div class="main">
+        <input type="text" id="password">
+        <div class="list">
+            <p id="upper">uppercase</p>
+            <p id="lower">lowercase</p>
+            <p id="Symbol">Symbol</p>
+            <p id="number">Number</p>
+        </div>
+    </div>
+  
+   <div class="strenghtDiv">
+    <div class="color"></div>
+   </div>
+   <p>
+    Password has <span id="num">0</span> chars
+   </p>
+   <p>your password id <b id="st">Weak</b></p>
+<script src="script.js"></script>
+</body>
+</html>

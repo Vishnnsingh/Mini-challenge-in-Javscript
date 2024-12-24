@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toast/Snackbar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Toast/Snackbar</h1>
+        <form >
+            <select name="side" id="side">
+                <option value="top">top</option>
+                <option value="bottom">bottom</option>
+            </select>
+        <select name="side2" id="side2">
+            <option value="left">left</option>
+            <option value="right">right</option>
+        </select>
+        <select name="info" id="info">
+            <option value="normal">normal</option>
+            <option value="error">error</option>
+            <option value="success">success</option>
+            <option value="warning">warning</option>
+            <option value="info">info</option>
+        </select>
+        <input type="text" id="mass" placeholder="enter your massage">
+        <div class="duration-wrapper">
+            <label for="duration" class="flex"> Duration</label>
+            <input type="range" name="duration" id="duration" min="3" max="10"  step="1" onchange="showVal(this.value)">
+            <span><output for="duration" id="duration-output">5</output>s</span>
+          </div>
+
+        <input type="button"  class="btn" value="show toast">
+        </form>
+
+        <div class="toster-container"></div>
+        
+
+    </main>
+    <script src="script.js"></script>
+    
+</body>
+</html>
